@@ -21,3 +21,23 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
+    
+# Engine
+
+def prompt_refinery(prompt):
+    pass
+
+def response_refinery(response):
+    pass
+
+@app.route("/engine", methods=["POST"])
+def engine():
+    content = request.json.get("content")
+    
+    if not content:
+        return jsonify({"error": "No text uploaded"}), 400
+    
+    print(json.dumps(content, indent=3))
+    
+    return jsonify({"response": "SHITTTT"})
