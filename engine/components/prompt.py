@@ -1,0 +1,1 @@
+text_analyze_prompt = "You are tasked with analyzing the following text content from a website to determine if it's a distraction and not relevant for a user trying to maintain focus and productivity. Be lenient because you're blocking out too many things. Please evaluate the text and respond with 'True' if it's distracting and 'False' if it's not. Text: "
